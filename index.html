@@ -21,6 +21,7 @@
         <div class="nav-links" id="nav-links">
           <a href="#features">主要功能</a>
           <a href="#journey">使用方式</a>
+          <a href="#contact">聯絡我們</a>
           <a class="nav-cta" href="#download">即將推出</a>
         </div>
       </nav>
@@ -99,12 +100,24 @@
         <div class="benefit reveal"><span>⌁</span><div><h3>快速記帳</h3><p>輕鬆新增收入與支出</p></div></div><div class="benefit reveal reveal-delay"><span>◌</span><div><h3>分類統計</h3><p>明白每一份資源去向</p></div></div><div class="benefit reveal reveal-delay-2"><span>⌂</span><div><h3>安心保存</h3><p>記錄留在你的裝置裡</p></div></div>
       </section>
 
+      <section class="contact section" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-copy reveal"><p class="section-label">SEND A MESSAGE</p><h2>有任何想法，<br />歡迎<span>寫給我們。</span></h2><p>無論是使用上的問題、功能建議，或只是想分享你的冒險旅程，都可以透過表單告訴我們。</p><div class="contact-note"><span>✦</span><div><strong>冒險者公會會收到你的訊息</strong><small>我們會在確認後儘快回覆 Email。</small></div></div></div>
+          <form class="contact-form reveal reveal-delay" id="contact-form" novalidate>
+            <div class="form-row"><label>姓名<span>*</span><input name="name" type="text" autocomplete="name" placeholder="你的名字" required /><small class="field-error" data-error-for="name"></small></label><label>Email<span>*</span><input name="email" type="email" autocomplete="email" placeholder="you@example.com" required /><small class="field-error" data-error-for="email"></small></label></div>
+            <label>主旨<span>*</span><input name="subject" type="text" placeholder="想和我們分享什麼？" required /><small class="field-error" data-error-for="subject"></small></label>
+            <label>訊息內容<span>*</span><textarea name="message" rows="5" placeholder="寫下你的訊息……" required></textarea><small class="field-error" data-error-for="message"></small></label>
+            <button class="button button-primary form-submit" type="submit">送出訊息 <span>→</span></button><p class="form-status" id="form-status" aria-live="polite" role="status"></p>
+          </form>
+        </div>
+      </section>
+
       <section class="download" id="download">
         <div class="container download-inner reveal"><p class="section-label">READY WHEN YOU ARE</p><h2>準備好，展開你的<br /><span>理財冒險。</span></h2><p>下載連結正在整備中。留下這個頁面，冒險者錢袋很快就會與你見面。</p><button class="button button-light" type="button" data-coming-soon>即將推出 <span>✦</span></button><p class="coming-message" aria-live="polite"></p></div>
       </section>
     </main>
 
     <footer class="footer"><div class="container footer-inner"><a class="brand" href="#top"><span class="brand-mark">✦</span><span>冒險者錢袋</span></a><p>© 2026 Adventurer's Pouch. Made for everyday journeys.</p><a href="#top">回到頂端 ↑</a></div></footer>
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
