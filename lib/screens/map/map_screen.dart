@@ -33,7 +33,7 @@ class MapScreen extends ConsumerWidget {
             padding: const EdgeInsets.fromLTRB(20, 18, 20, 28),
             sliver: SliverList(
               delegate: SliverChildListDelegate.fixed([
-                Text('☀️ 我的冒險', style: Theme.of(context).textTheme.headlineSmall),
+                Text('💰 冒險者錢袋', style: Theme.of(context).textTheme.headlineSmall),
                 const SizedBox(height: 4),
                 Text('${now.year} 年 ${now.month} 月 · 今日冒險旅程',
                     style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: const Color(0xFF71827B))),
@@ -43,7 +43,7 @@ class MapScreen extends ConsumerWidget {
                 _BalanceCard(stats: stats),
                 const SizedBox(height: 24),
                 Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-                  Text('最近紀錄', style: Theme.of(context).textTheme.titleLarge),
+                  Text('旅途足跡', style: Theme.of(context).textTheme.titleLarge),
                   if (recent.isNotEmpty)
                     Text('最新 3 筆', style: Theme.of(context).textTheme.bodySmall?.copyWith(color: const Color(0xFF71827B))),
                 ]),
