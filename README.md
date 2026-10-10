@@ -1,17 +1,27 @@
-# adventurer_pouch
+# 冒險者錢袋
 
-A new Flutter project.
+一款以水彩童話與輕 RPG 冒險為主題的記帳 App。
 
-## Getting Started
+你是冒險者，小精靈是陪你上路的夥伴。每筆收支都是整理旅費與行囊，每個月是一段有終點的遠征，每年則留下自己的旅行紀錄。
 
-This project is a starting point for a Flutter application.
+## V2 的方向
 
-A few resources to get you started if this is your first Flutter project:
+- **可靠記帳**：快速輸入、歷史搜尋、固定收支、分類統計與自訂目標。
+- **精靈陪伴**：解鎖同行精靈、設定暱稱與旅行心願，記帳成功時獲得分類專屬的小回饋。
+- **自己的旅誌**：整理日留下足跡，回顧與目標完成留下路標，逐月累積成年度冊。
+- **日常的小驚喜**：內建旅途小語、季節場景、節日與自訂紀念日裝飾，離線也能使用。
+- **可選 AI 月底回顧**：使用者自備 API Key，僅按明確操作生成月度文字回顧，預設使用去金額化彙總。
+- **長期資料保存**：資料以本機為主，規劃完整 JSON 備份／還原與 CSV 帳目匯出。
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+冒險感來自生活留下的痕跡，不要求連續打卡，也不因漏記或超支責備使用者。精靈全部解鎖後，仍能繼續記帳、設定目標與保存旅誌；內容以內建機制循環使用，減少持續更新故事的需求。
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 目前進度
+
+專案已有 Flutter 記帳基礎，V2 規劃已完成修訂 5，準備進入 P0 基線盤點。上述 V2 功能為開發方向，尚未完成實作與驗收。
+
+- [V2 企劃書](冒險者錢袋_V2_企劃書.md)
+- [實作階段與驗收標準](冒險者錢袋_V2_實作階段與驗收.md)
+
+## 技術基礎
+
+使用 Flutter、Riverpod 與 SQLite，V2 以 Android 真機驗收為優先。App 採本機優先設計，規劃無登入、無 Supabase 依賴；AI 供應商於 P6 評估選定。
